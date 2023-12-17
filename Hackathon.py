@@ -50,7 +50,7 @@ class Scholarship:
         return psycopg2.connect(
             dbname='Hackathon',
             user='postgres',
-            password='656565',
+            password=os.getenv('DB_PASSWORD'),
             host='localhost',
             port='5432'
         )
@@ -113,7 +113,7 @@ class Scholarship:
     def start_program(self):
         while True:
             self.display()
-            choice = self.user_input("Enter your choice: \n")
+            choice = self.user_input("Please enter your choice: \n")
 
             if choice == "1":
                 print("All volunteers: \n")
@@ -125,16 +125,16 @@ class Scholarship:
 
             elif choice == "3":
                 print("Add a student: \n")
-                volunteer_id = self.user_input("Enter a volunteer ID to add to the student list: ")
+                volunteer_id = self.user_input("Please enter the volunteer ID you want to add to the student list: ")
                 self.add_student(volunteer_id)
                 print("Student added successfully. \n")
 
             elif choice == "4":
-                print("update a student:")
-                student_id = self.user_input("Enter a student ID you want to update: ")
-                student_day = int(self.user_input("Enter how many days the student work: "))
+                print("Update a student:")
+                student_id = self.user_input("Please enter the student ID you want to update: ")
+                student_day = int(self.user_input("Please enter how many days the student work: "))
                 self.update_student(student_day, student_id)
-                print("Student has been updated successfully. \n")
+                print("Student data has been updated successfully. \n")
 
             elif choice == "0":
                 break
