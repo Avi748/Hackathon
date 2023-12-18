@@ -50,8 +50,8 @@
   <header>
     <div class="jumbotron jumbotron-fluid" id="bimage">
       <div class="container">
-      <h1 class="display-2" style="text-align:left; padding-top:10%;">Come work with Us</h1>
-      <p class="lead" style="text-align:left;font-size:150%;">The National Farmers Organization (NFO) Offer a scholarship for students who volunteer </p>
+      <h1 class="display-1" style="text-align:left; padding-top:10%; color:lightgoldenrodyellow;">Come work with Us</h1>
+      <p class="lead" style="text-align:left;font-size:200%; color:lightgoldenrodyellow;">The National Farmers Organization (NFO) Offer a scholarship for students who volunteer </p>
     </div>
   </header>
     <div class="container" id="contact">
