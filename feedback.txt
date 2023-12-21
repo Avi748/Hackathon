@@ -1,0 +1,8 @@
+Avi: Volunteering in change of scholarships
+It as simple yet well strucutured project, the functionality is ok and the main concepts we learned (like OOP and Databases)
+When registering the user receives an email.
+Python OOP:8/10
+Modules: 6/10
+Database:7/10
+JSON/API:0/10
+Overall: 6

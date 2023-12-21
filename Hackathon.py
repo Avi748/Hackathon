@@ -48,11 +48,11 @@ class Scholarship:
 
     def connect_to_db(self):
         return psycopg2.connect(
-            dbname='Hackathon',
+            dbname='Antisemitism',
             user='postgres',
-            password=os.getenv('DB_PASSWORD'),
+            password='postgres',
             host='localhost',
-            port='5432'
+            port='5433'
         )
     
     def get_email(self, id):
